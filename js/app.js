@@ -6,8 +6,6 @@ function introduction() {
   alert(`Wecome ${userName} I am going to ask you five questions about my self. Good Luck!`);
 }
 introduction();
-//console.log('I asked the user for their name: ${userName}');
-//console.log(score);
 
 //Question #1
 function questionOne() {
@@ -20,8 +18,6 @@ function questionOne() {
   }
 }
 questionOne();
-//console.log(`The user responded ${userResponse}`);
-//console.log(score);
 
 //Question #2
 function questionTwo() {
@@ -34,8 +30,6 @@ function questionTwo() {
   }
 }
 questionTwo();
-//console.log(`The user responded ${userResponse}`);
-//console.log(score);
 
 //Question #3
 function questionThree() {
@@ -48,8 +42,6 @@ function questionThree() {
   }
 }
 questionThree();
-//console.log(`The user responded ${userResponse}`);
-//console.log(score);
 
 //Question #4
 function questionFour () {
@@ -63,8 +55,6 @@ function questionFour () {
 }
 
 questionFour();
-//console.log(`The user responded ${userResponse}`);
-//console.log(score);
 
 //Question #5
 function questionFive() {
@@ -78,8 +68,6 @@ if(userResponse === 'y' || userResponse === 'yes') {
 }
 
 questionFive();
-//console.log(`The user responded ${userResponse}`);*/
-//console.log(score);
 
 //give the user 4 chances to answer the 6th question
 
@@ -110,9 +98,6 @@ function questionSix() {
   }
 }
 questionSix();
-//console.log(`The user responded ${userResponse}`);
-//console.log(typeof(userResponse));
-//console.log(score);
 
 //Question #7
 function questionSeven() {
@@ -133,8 +118,6 @@ mainLoop: while(chancesRemaining > 0){
   for(let i = 0; i < myFavoriteMovies.length; i++){
     //Check the users answer
     if(myFavoriteMovies[i].toLowerCase() === userResponse.toLowerCase()){
-      //console.log(`The Answer is ${myFavoriteMovies[i]}`);
-      //console.log(`The user responded ${userResponse}`);
       alert('Yes that is one of them.');
       score++;
       break mainLoop;
@@ -146,7 +129,6 @@ mainLoop: while(chancesRemaining > 0){
 alert('My top 10 favorite movies are: ' + myFavoriteMovies);
 }
 questionSeven();
-//console.log(score);
 
 function goodBye() {
   alert('Thanks for answering these questions ' + userName + '! You got ' + score + '/7 questions correct!');
